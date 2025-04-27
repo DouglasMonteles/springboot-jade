@@ -1,13 +1,13 @@
-package com.poc.springboot_jade;
+package br.com.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootJadeApplication {
+public class SpringbootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootJadeApplication.class, args);
+		SpringApplication.run(SpringbootApplication.class, args);
 	}
 
 }

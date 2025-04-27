@@ -8,10 +8,11 @@
 		<version>3.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.poc</groupId>
+	<groupId>br.com.app</groupId>
 	<artifactId>springboot-jade</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-jade</name>
+    <packaging>pom</packaging>
+    <name>springboot-jade</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,11 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>server</module>
+		<module>agents</module>
+	</modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
