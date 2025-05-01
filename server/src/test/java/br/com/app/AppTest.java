@@ -1,4 +1,4 @@
-package br.com.app;
+package br.com.server;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

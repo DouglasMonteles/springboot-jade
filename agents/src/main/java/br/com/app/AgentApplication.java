@@ -1,10 +1,46 @@
 package br.com.app;
 
+import br.com.app.agents.ServerAgent;
+import jade.core.Profile;
+import jade.core.ProfileImpl;
+import jade.core.Runtime;
+import jade.wrapper.ContainerController;
+import jade.wrapper.StaleProxyException;
 
 public class AgentApplication {
 
     public static void main(String[] args) {
-        System.out.println( "Hello World!" );
+        Runtime jadeRuntime = Runtime.instance();
+        Profile jadeProfile = new ProfileImpl();
+
+        ContainerController containerController = jadeRuntime.createMainContainer(jadeProfile);
+
+        try {
+            var rmaAgent = containerController.createNewAgent("rma", "jade.tools.rma.rma", null);
+            var serverAgent = containerController.createNewAgent("server", ServerAgent.class.getName(), null);
+
+            rmaAgent.start();
+            serverAgent.start();
+        } catch (StaleProxyException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void teste() {
+        Runtime jadeRuntime = Runtime.instance();
+        Profile jadeProfile = new ProfileImpl();
+
+        ContainerController containerController = jadeRuntime.createMainContainer(jadeProfile);
+
+        try {
+            var rmaAgent = containerController.createNewAgent("rma", "jade.tools.rma.rma", null);
+            var serverAgent = containerController.createNewAgent("server", ServerAgent.class.getName(), null);
+
+            rmaAgent.start();
+            serverAgent.start();
+        } catch (StaleProxyException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
