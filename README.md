@@ -23,7 +23,7 @@ run the project, you have the following options:
 - Run the build: After building, go to agents/target and execute: `java -jar agents-3.4.5.jar`
 - Open the project in an IDE: Run the main class located at: `agents/src/main/java/br/com/app/AgentApplication.java`
 
-# Tecnologies
+# Technologies
 
 Technologies:
 - Java 21
@@ -31,6 +31,11 @@ Technologies:
 - Maven;
 - Spring Boot, and
 - Makefile;
+
+# Help
+
+The project includes a help command that can be executed via makefile, allowing you to view all available commands.
+
 
 # References
 
