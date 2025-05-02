@@ -36,6 +36,9 @@ Technologies:
 
 The project includes a help command that can be executed via makefile, allowing you to view all available commands.
 
+![image](https://github.com/user-attachments/assets/778feca1-5fa8-43b3-9b2a-caea9ae12ed2)
+
+<center>Figure 1: Makefile commmands</center>
 
 # References
 
